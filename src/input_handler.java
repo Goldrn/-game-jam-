@@ -8,18 +8,25 @@ public class input_handler {
         player_output = player_input.nextLine();
     }
     public static void piss_poor_ifs(){
-            if (Objects.equals(player_output, "up") && player.y_pos > 0 && entities.entitys[player.y_pos - 1][player.x_pos] != 1 ) {
+            if (player_output.equals("up") && player.y_pos > 0 && entities.entitys[player.y_pos - 1][player.x_pos] != 1 ) {
                 player.y_pos -= 1;
             }
-            if (Objects.equals(player_output, "down") && player.y_pos < 11 && entities.entitys[player.y_pos + 1][player.x_pos] != 1) {
+            else if (player_output.equals("down") && player.y_pos < 11 && entities.entitys[player.y_pos + 1][player.x_pos] != 1) {
                 player.y_pos += 1;
             }
-            if (Objects.equals(player_output, "right") && player.x_pos > 0 && entities.entitys[player.y_pos][player.x_pos - 1] != 1) {
+            else if (player_output.equals("right") && player.x_pos > 0 && entities.entitys[player.y_pos][player.x_pos - 1] != 1) {
                 player.x_pos -= 1;
             }
-            if (Objects.equals(player_output, "left") && player.x_pos < 11 && entities.entitys[player.y_pos][player.x_pos + 1] != 1) {
+            else if (player_output.equals("left") && player.x_pos < 11 && entities.entitys[player.y_pos][player.x_pos + 1] != 1) {
                 player.x_pos += 1;
             }
+            else if (player_output.equals("done")){
+                Main.turns = false;
+            }
+            else {
+                System.out.println("u dumbass");
+            }
+
         }
     }
 
