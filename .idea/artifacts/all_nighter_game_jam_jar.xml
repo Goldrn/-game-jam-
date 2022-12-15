@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="all-nighter-game-jam:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/all_nighter_game_jam_jar</output-path>
+    <root id="archive" name="all-nighter-game-jam.jar">
+      <element id="module-output" name="all-nighter-game-jam" />
+    </root>
+  </artifact>
+</component>

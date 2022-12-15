@@ -6,10 +6,9 @@ public class Main {
         player.y_pos = 5;
         while(turns) {
             entities.create_entitys();
-            world.create_world('.', 11, 11);
+            world.create_world('.', world.world_width, world.world_height);
             input_handler.input();
             input_handler.piss_poor_ifs();
         }
-
     }
 }
