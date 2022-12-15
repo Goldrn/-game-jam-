@@ -12,6 +12,7 @@ public class Main {
             world.create_world('.', world.world_width, world.world_height, wurld);
             input_handler.input();
             input_handler.piss_poor_ifs();
+            entities.cat.move_cat(world.charles);
         }
     }
 }
